@@ -60,12 +60,11 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   holiday_hash.each do |k,v|
     all_decorations = ""
-    puts "#{k}:"
+    puts "#{k.capitalize}:"
     v.each do |holidays, decorations|
       all_decorations = decorations.join(', ')
-      puts "  #{holidays}: #{all_decorations}"
+      puts "#{holidays.capitalize}: #{all_decorations}"
     end
-  end
 end
 
 def all_holidays_with_bbq(holiday_hash)
