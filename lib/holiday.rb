@@ -63,7 +63,7 @@ def all_supplies_in_holidays(holiday_hash)
     puts "#{k}:"
     v.each do |holidays, decorations|
       all_decorations = decorations.join(', ')
-      puts "#{holidays}: #{all_decorations}"
+      puts "  #{holidays}: #{all_decorations}"
     end
   end
 end
